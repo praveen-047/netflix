@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import {Routes,Route} from "react-router-dom"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import Login from './pages/Login/index.js'
+import Home from './pages/Home/index.js'
+import MovieDetails from './pages/MovieDetails/index.js'
+import Popular from './pages/Popular/index.js'
+import NotFound from './pages/NotFound/index.js'
+import ProtectedRoute from "./pages/ProtectedRoute/index.js";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/' element={<ProtectedRoute><Home/></ProtectedRoute>}/>
+        <Route path='/moviedetails/:id' element={<ProtectedRoute><MovieDetails/></ProtectedRoute>}/>
+        <Route path='/popular' element={<ProtectedRoute><Popular/></ProtectedRoute>}/>
+        <Route path='*' element={<NotFound/>}/>
+      </Routes>
+    </>
   );
 }
 

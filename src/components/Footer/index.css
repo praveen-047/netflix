@@ -1,0 +1,16 @@
+.footer-container{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icons-container .footer-icon{
+    font-size: 20px;
+    margin-right: 30px;
+}
+.footer-container h1{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,36 @@
+.popular-container{
+  background-color: #131313;
+  width: 100vw;
+  min-height: 100vh;
+  
+  padding-top: 85px;
+}
+.popular-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.popular-card{
+    width: 120px;
+    height: 130px;
+    margin:5px 5px 5px 0px;
+    
+}
+.popular-card img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+@media screen and (min-width:768px) {
+    .popular-cards-container{
+        padding: 20px 130px;
+    }
+    .popular-card{
+    width: 300px;
+    height: 200px;
+    margin:15px 15px 15px 0px;
+    
+}
+}

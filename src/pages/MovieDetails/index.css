@@ -1,0 +1,100 @@
+.MovieDetails{
+  background-color: #131313;
+  width: 100vw;
+  min-height: 100vh;
+  /* padding: 30px 30px; */
+}
+
+.movie-details-time-year h2{
+    font-size: 18px;
+    color: #ddddddfa;
+    font-weight: 500;
+    margin: 0px;
+    padding-right: 10px;
+}
+.u-a-container{
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 2px 10px;
+}
+.u-a-heading{
+  margin: 3px 8px;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0px;
+}
+.movie-detail-info{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-detail-info-card{
+  max-width: 140px;
+  margin-right: 25px;
+}
+
+
+.movie-detail-info-heading{
+  color: #64748B;
+  font-size: 15px;
+  font-weight: 600;
+}
+.movie-detail-info-card ul{
+  list-style-type:none;
+  padding: 0;
+}
+
+.movie-detail-info-card ul li{
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+}
+.more-like-this-container{
+  padding: 0px 20px;
+}
+
+.more-like-this-heading{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.more-like-this-card{
+  width: 180px;
+  height: 150px;
+  margin: 0px 10px 10px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.more-like-this-card img{
+  width: 100%;
+  height: 100%;
+
+}
+
+@media screen and (min-width:768px) {
+  .movie-detail-info{
+    padding: 30px 130px;
+  }
+  .movie-detail-info-card{
+  max-width: 200px;
+  margin-right: 50px;
+}
+.movie-detail-info-heading{
+  font-size: 20px;
+}
+.movie-detail-info-card ul li{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.more-like-this-container{
+  padding: 0px 130px;
+}
+.more-like-this-card{
+ width: 190px;
+  height: 130px; 
+ margin: 0px 20px 20px 0px;
+}
+}
