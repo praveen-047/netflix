@@ -7,6 +7,7 @@ import Home from './pages/Home/index.js'
 import MovieDetails from './pages/MovieDetails/index.js'
 import Popular from './pages/Popular/index.js'
 import Account from "./pages/Account/index.js";
+import Search from './pages/Search/index.js'
 import NotFound from './pages/NotFound/index.js'
 import ProtectedRoute from "./pages/ProtectedRoute/index.js";
 import './App.css';
@@ -20,6 +21,7 @@ function App() {
         <Route path='/moviedetails/:id' element={<ProtectedRoute><MovieDetails/></ProtectedRoute>}/>
         <Route path='/popular' element={<ProtectedRoute><Popular/></ProtectedRoute>}/>
         <Route path='/account' element={<ProtectedRoute><Account/></ProtectedRoute>}/>
+        <Route path='/search' element={<ProtectedRoute><Search/></ProtectedRoute>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
     </>

@@ -107,8 +107,8 @@ export default function MovieDetails() {
               <h1 className="more-like-this-heading">More like this</h1>
               <div className="d-flex flex-wrap">
                 {movie.similar_movies?.map((each)=>(
-                <div className="more-like-this-card" onClick={()=>navigate(`/moviedetails/${each.id}`,{replace:true})}>
-                  <img key={each.id} src={each.backdrop_path}/>
+                <div className="more-like-this-card" key={each.id} onClick={()=>navigate(`/moviedetails/${each.id}`,{replace:true})}>
+                  <img key={each.id} src={each.backdrop_path} alt='movie'/>
                 </div>
               ))}
               </div>

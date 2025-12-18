@@ -3,11 +3,16 @@ import React, { useState } from "react";
 import {useNavigate} from 'react-router-dom'
 import logo from "../../assets/logo.png";
 import avatar from '../../assets/profile.png'
+import avatar2 from '../../assets/profile2.png'
 import { IoSearch } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
 import { IoIosCloseCircle } from "react-icons/io";
 export default function Header() {
   const [openmenu, setOpenMenu] = useState(false);
+  const [searchInput,setSearchInput] = useState("")
+
+
+
   let menuClass = openmenu ? "open" : "close";
   const navigate = useNavigate()
 
@@ -24,8 +29,10 @@ export default function Header() {
         </div>
         <div className="navbar-ul">
             <div className="search-input-icon">
-              <input type="text" placeholder="Movie name" />
-              <IoSearch className="navbar-icons" />
+              <input type="text" placeholder="Movie name" onChange={(e)=>setSearchInput(e.target.value)} onKeyDown={(e)=>{if (e.key==="Enter"){
+                navigate(`/search?query=${searchInput}`);
+              }}}/>
+              <IoSearch className="navbar-icons" onClick={()=>navigate(`/search?query=${searchInput}`,{replace:true})}/>
             </div>
             <IoMenu className="d-md-none navbar-icons" onClick={() => setOpenMenu(true)}/>
               <img className="d-none d-md-block" src={avatar} alt="profile"/>
