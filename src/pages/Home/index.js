@@ -93,7 +93,7 @@ export default function Home() {
               >
                 <h1>{randomPoster.title}</h1>
                 <p>{randomPoster.overview}</p>
-                <button className="play-button">Play</button>
+                <button className="play-button" hidden>Play</button>
               </div>
             )}
 

@@ -11,9 +11,9 @@
     padding: 20px;
 }
 .popular-card{
-    width: 120px;
-    height: 130px;
-    margin:5px 5px 5px 0px;
+    width: 185px;
+    height: 140px;
+    margin:5px 10px 10px 0px;
     
 }
 .popular-card img{
@@ -29,7 +29,7 @@
     }
     .popular-card{
     width: 300px;
-    height: 200px;
+    height: 220px;
     margin:15px 15px 15px 0px;
     
 }

@@ -7,19 +7,15 @@ export default function Carousel({ cards }) {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToShow: 2.5,
+     slidesToScroll: 2,
     arrows: false,
-    responsive:[
-        {
-            breakpoint:768,
-            settings:{
-                slidesToShow: 3,
-          slidesToScroll: 2
-            }
-        },
-    ]
+    centerMode: true,       // 👈 enables half cards on BOTH sides
+  centerPadding: "29px", 
+    swipe: true,           // 👈 enable swipe
+  draggable: true,       // 👈 enable mouse drag
+  touchMove: true,
+     // 👈 smoother movement
   };
 
   return (

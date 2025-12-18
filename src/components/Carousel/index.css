@@ -1,4 +1,5 @@
 .slider-container {
+    box-sizing: border-box;
 }
 .carosule-card{
     margin: 3px 3px 3px 0px;
@@ -11,11 +12,15 @@
     padding-right: 5px;
     border-radius: 13px;
 }
+
 @media screen and (min-width:768px) {
     .carosule-card{
         margin: 3px 6px 3px 0px;
-        height: 240px;
+        height: 250px;
     }
+    .slick-list {
+  overflow: hidden;
+}
 }
 .carosule-card:focus,
 .carosule-card:active,

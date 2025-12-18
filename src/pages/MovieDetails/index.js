@@ -68,7 +68,7 @@ export default function MovieDetails() {
                 <h2>{year}</h2>
               </div>
               <p>{movie.overview}</p>
-              <button className="play-button">Play</button>
+              <button className="play-button" hidden>Play</button>
             </div>
             <div className="movie-detail-info">
               <div className="movie-detail-info-card">

@@ -71,12 +71,17 @@
     padding: 0px;
 }
 .menu-list li{
-    color:rgba(255, 255, 255, 0.726);
+    color:rgba(255, 255, 255, 0.426);
     font-size:20px;
     font-weight:500;
     cursor: pointer;
     margin-right: 15px;
     cursor: pointer;
+}
+.menu-list li:hover{
+    font-size:20px;
+    font-weight:500;
+    color: rgba(255, 255, 255, 0.826);
 }
 .open{
     display: block;
