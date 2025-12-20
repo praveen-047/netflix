@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# 🎬 Netflix-Style Movies App (React.js)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Netflix-inspired movies application built using **React.js**, featuring authentication, protected routes, movie listings, search functionality, and detailed movie pages using real APIs.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
+🔗 [https://netflix-seven-bice.vercel.app/]
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📌 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔐 User Authentication (JWT-based)
+- 🛡 Protected Routes
+- 🏠 Home page with Trending & Originals
+- 🔍 Search movies using query parameters
+- 🎞 Movie Details page with similar movies
+- ⭐ Popular movies listing
+- 🎠 Smooth, scrollable carousels (react-slick)
+- ⏳ Loaders, error handling & empty states
+- 📱 Fully responsive design
+- ❌ 404 Not Found page
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Tech Stack
 
-### `npm run build`
+- **Frontend:** React.js, JavaScript (ES6+)
+- **Routing:** React Router v6
+- **Styling:** CSS3, Flexbox
+- **API Handling:** Fetch API
+- **Carousel:** react-slick
+- **Authentication:** JWT
+- **State Management:** React Hooks
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ src/
+├── components/
+│ ├── Header/
+│ ├── Footer/
+│ ├── Loader/
+│ ├── ErrorMsg/
+│ └── Carousel/
+├── pages/
+│ ├── Login/
+│ ├── Home/
+│ ├── Popular/
+│ ├── Search/
+│ ├── MovieDetails/
+│ ├── Account/
+│ └── NotFound/
+├── App.js
+├── index.js
+└── index.css
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📸 Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![details](https://github.com/user-attachments/assets/1b787338-1646-4797-8af6-483df457acc2)
+![popular](https://github.com/user-attachments/assets/ee14f88b-b2c6-40e7-8bd7-1bb87fde7ae9)
+![WhatsApp Image 2025-12-20 at 8 21 04 PM](https://github.com/user-attachments/assets/2b8f3edf-4144-4e8e-a716-8d5f4784d806)
+![movies](https://github.com/user-attachments/assets/363aad68-a67b-4d50-bede-8415731a2467)
+![popular phone](https://github.com/user-attachments/assets/9cbb3bec-3f91-4038-ae79-30cb2c6998e0)
+![details phone](https://github.com/user-attachments/assets/69a99b3d-ee0f-4ea2-9206-76db81717f84)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
